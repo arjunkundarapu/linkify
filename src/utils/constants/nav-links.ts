@@ -1,4 +1,4 @@
-import { HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCodeIcon } from "lucide-react";
+import { BrainCircuitIcon, HelpCircleIcon, MicIcon, NewspaperIcon, UsersIcon, VideoIcon } from "lucide-react";
 
 export const NAV_LINKS = [
     {
@@ -6,34 +6,24 @@ export const NAV_LINKS = [
         href: "/features",
         menu: [
             {
-                title: "Link Shortening",
-                tagline: "Shorten links and track their performance.",
-                href: "/features/link-shortening",
-                icon: Link2Icon,
+                title: "AI Interviews",
+                tagline: "Conduct intelligent, automated interviews with AI.",
+                href: "/features/ai-interviews",
+                icon: BrainCircuitIcon,
             },
             {
-                title: "Password Protection",
-                tagline: "Secure your links with a password.",
-                href: "/features/password-protection",
-                icon: LockIcon,
+                title: "Video Interviews",
+                tagline: "Real-time video interviews with LiveKit integration.",
+                href: "/features/video-interviews",
+                icon: VideoIcon,
             },
             {
-                title: "Advanced Analytics",
-                tagline: "Gain insights into who is clicking your links.",
-                href: "/features/analytics",
-                icon: LineChartIcon,
-            },
-            {
-                title: "Custom QR Codes",
-                tagline: "Use QR codes to reach your audience.",
-                href: "/features/qr-codes",
-                icon: QrCodeIcon,
+                title: "Candidate Management",
+                tagline: "Manage candidates and interview schedules.",
+                href: "/features/candidate-management",
+                icon: UsersIcon,
             },
         ],
-    },
-    {
-        title: "Pricing",
-        href: "/pricing",
     },
     {
         title: "Enterprise",
@@ -45,13 +35,13 @@ export const NAV_LINKS = [
         menu: [
             {
                 title: "Blog",
-                tagline: "Read articles on the latest trends in tech.",
+                tagline: "Read articles on AI recruiting and best practices.",
                 href: "/resources/blog",
                 icon: NewspaperIcon,
             },
             {
                 title: "Help",
-                tagline: "Get answers to your questions.",
+                tagline: "Get answers to your questions about AI interviews.",
                 href: "/resources/help",
                 icon: HelpCircleIcon,
             },

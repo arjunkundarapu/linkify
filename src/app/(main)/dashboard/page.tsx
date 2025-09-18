@@ -1,34 +1,47 @@
 "use client"
 
+import React, { useState } from 'react';
+import RecruiterDashboard from "@/components/dashboard/recruiter-dashboard";
+import ApplicantDashboard from "@/components/dashboard/applicant-dashboard";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
-import React from 'react'
-import { useClerk } from "@clerk/nextjs";
 
-const DashboardPage = () => {
-
-    const router = useRouter();
-
-    const { user, signOut } = useClerk();
+const DashboardPage: React.FC = () => {
+    const [selectedRole, setSelectedRole] = useState<string>('recruiter');
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
-            <h1 className="text-xl font-medium">
-                Welcome {user?.firstName}!
-            </h1>
-            <p className="text-gray-500 mt-2">
-                You are signed in.
-            </p>
-            <div className="flex items-center justify-center gap-4 mt-4">
-                <Button onClick={() => router.push("/")} variant="outline">
-                    Back to home
-                </Button>
-                <Button onClick={() => signOut()}>
-                    Sign Out
-                </Button>
+        <div className="w-full">
+            {/* Role Selector for Demo */}
+            <div className="mb-6 p-4 bg-card rounded-lg border">
+                <h2 className="text-lg font-semibold mb-3">Dashboard View</h2>
+                <p className="text-sm text-muted-foreground mb-4">
+                    Select a role to view the corresponding dashboard:
+                </p>
+                <div className="flex gap-2">
+                    <Button 
+                        variant={selectedRole === 'recruiter' ? 'default' : 'outline'}
+                        onClick={() => setSelectedRole('recruiter')}
+                        size="sm"
+                    >
+                        Recruiter Dashboard
+                    </Button>
+                    <Button 
+                        variant={selectedRole === 'applicant' ? 'default' : 'outline'}
+                        onClick={() => setSelectedRole('applicant')}
+                        size="sm"
+                    >
+                        Applicant Dashboard
+                    </Button>
+                </div>
             </div>
+
+            {/* Render appropriate dashboard based on selected role */}
+            {selectedRole === 'recruiter' ? (
+                <RecruiterDashboard />
+            ) : (
+                <ApplicantDashboard />
+            )}
         </div>
-    )
+    );
 };
 
-export default DashboardPage
+export default DashboardPage;

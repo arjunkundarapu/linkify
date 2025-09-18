@@ -14,11 +14,11 @@ import Footer from "./navigation/footer";
 import Providers from "./providers/providers";
 
 // dashboard
-import Sidebar from "./dashboard/sidebar";
-import DashboardNavbar from "./dashboard/dashboard-navbar";
+import RecruiterDashboard from "./dashboard/recruiter-dashboard";
+import ApplicantDashboard from "./dashboard/applicant-dashboard";
 
 // pricing
-import PricingCards from "./pricing-cards";
+// Removed - pricing functionality not needed
 
 // blog
 import Blogs from "./blog/blogs";
@@ -36,10 +36,8 @@ export {
 
     Providers,
 
-    Sidebar,
-    DashboardNavbar,
-
-    PricingCards,
+    RecruiterDashboard,
+    ApplicantDashboard,
 
     Blogs,
 };

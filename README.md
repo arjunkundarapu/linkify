@@ -1,28 +1,28 @@
-<img src="https://github.com/user-attachments/assets/e1e0fe16-21f4-44c8-a22d-39b4494433a1" alt="Link Management Logo" width="50" height="50">
+<img src="https://github.com/user-attachments/assets/e1e0fe16-21f4-44c8-a22d-39b4494433a1" alt="SRA Logo" width="50" height="50">
 
-# 🔗 Linkify - The Link Management Platform for Businesses(Landing Page)
+# 🤖 SRA - Smart Recruiting Assistant
 
-<!-- <img src="https://github.com/user-attachments/assets/deab03fd-4234-44c3-a6ad-484c4a1a02a1" alt="Linkify Thubmnail"> -->
-<img src="https://github.com/user-attachments/assets/ee867e8e-7871-4289-bd56-3eef40adb9b2" alt="Linkify Thumbnail" style="border-radius: 50px;" width="1280">
+<!-- <img src="https://github.com/user-attachments/assets/deab03fd-4234-44c3-a6ad-484c4a1a02a1" alt="SRA Thumbnail"> -->
+<img src="https://github.com/user-attachments/assets/ee867e8e-7871-4289-bd56-3eef40adb9b2" alt="SRA Thumbnail" style="border-radius: 50px;" width="1280">
 
 
 ## 🌟 Introduction
-Linkify is an innovative link management software designed to help you shorten, track, and optimize your links effortlessly. Built with React, Node.js, and MongoDB, Linkify provides powerful analytics and user-friendly features to enhance your link-sharing experience.
+SRA (Smart Recruiting Assistant) is an innovative AI-powered recruiting platform designed to help you conduct intelligent interviews, analyze candidates, and make better hiring decisions. Built with React, Node.js, and LiveKit, SRA provides powerful AI capabilities and real-time video interviews to enhance your recruitment process.
 
 ## 🚀 Features
 
-- **Link Shortening:** Easily create short links for better sharing.
-- **Analytics Dashboard:** Track clicks, user engagement, and performance metrics.
-- **Customizable Links:** Create branded links that reflect your identity.
-- **AI-Powered Suggestions:** Get smart recommendations for link optimization.
+- **AI-Powered Interviews:** Conduct intelligent automated interviews with advanced AI.
+- **Real-time Video:** Seamless video interviews using LiveKit technology.
+- **Smart Analytics:** Track and analyze candidate performance and responses.
+- **Candidate Management:** Manage candidates and interview schedules efficiently.
 
 ## 🔗 Live Preview
 
-Check out the live demo of Linkify here: [Live Preview](http://Linkify-demo.vercel.app)
+Check out the live demo of SRA here: [Live Preview](http://sra-demo.vercel.app)
 
 ## 🎥 Watch Demo on YouTube
 
-Check out the tutorial to see how this link management system was built: [Watch the Tutorial](https://youtu.be/3_sZPAfVR_U) 💻 
+Check out the tutorial to see how this AI recruiting system was built: [Watch the Tutorial](https://youtu.be/3_sZPAfVR_U) 💻 
 
 ## 💻 Tech Stack
 
@@ -35,6 +35,8 @@ Check out the tutorial to see how this link management system was built: [Watch 
 * MongoDB
 * Clerk
 * React Hook Form
+* LiveKit
+* FastAPI (Backend)
 
 ## 🛠️ Installation
 To run Linkify locally, follow these steps:

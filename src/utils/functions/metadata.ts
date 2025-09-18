@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - The Link Management Platform for Businesses`,
-    description = `${process.env.NEXT_PUBLIC_APP_NAME} is the link management platform for businesses. It helps you build, brand, and track your links.`,
+    title = `${process.env.NEXT_PUBLIC_APP_NAME} - Smart AI Recruiting Assistant`,
+    description = `${process.env.NEXT_PUBLIC_APP_NAME} is an AI-powered recruiting assistant that conducts intelligent interviews and streamlines your hiring process.`,
     image = "/thumbnail.png",
     icons = [
         {
@@ -41,7 +41,7 @@ export const generateMetadata = ({
         title,
         description,
         ...(image && { card: "summary_large_image", images: [image] }),
-        creator: "@shreyassihasane",
+        creator: "@smartrecruit",
     },
     // metadataBase: new URL(process.env.APP_DOMAIN!),
     ...(noIndex && { robots: { index: false, follow: false } }),

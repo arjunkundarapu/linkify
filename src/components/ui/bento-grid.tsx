@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
-import { ArrowRightIcon, CalendarIcon, Link2Icon, SearchIcon, WaypointsIcon } from "lucide-react";
+import { ArrowRightIcon, BrainCircuitIcon, CalendarIcon, MicIcon, SearchIcon, UsersIcon, VideoIcon } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
@@ -12,9 +12,9 @@ import { Label } from "./label";
 
 export const CARDS = [
     {
-        Icon: Link2Icon,
-        name: "Shorten links",
-        description: "Create short links that are easy to remember and share.",
+        Icon: BrainCircuitIcon,
+        name: "AI Interview Assistant",
+        description: "Conduct intelligent interviews with AI that adapts to candidate responses.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
@@ -22,19 +22,19 @@ export const CARDS = [
             <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
                 <CardHeader>
                     <CardTitle>
-                        Create short links
+                        Start AI Interview
                     </CardTitle>
                     <CardDescription>
-                        Create short links that are easy to remember and share.
+                        Begin an intelligent interview session with our AI assistant.
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <Label>
-                        Paste your link
+                        Candidate Position
                     </Label>
                     <Input
                         type="text"
-                        placeholder="Paste your link here..."
+                        placeholder="e.g., Software Engineer, Data Scientist..."
                         className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
                     />
                 </CardContent>
@@ -43,40 +43,49 @@ export const CARDS = [
     },
     {
         Icon: SearchIcon,
-        name: "Search your links",
-        description: "Quickly find the links you need with AI-powered search.",
+        name: "Search Candidates",
+        description: "Quickly find and filter candidates with AI-powered search.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
             <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
-                <Input placeholder="Type to search..." />
+                <Input placeholder="Search candidates..." />
                 <div className="mt-1 cursor-pointer">
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/hdf00c</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sdv0n0</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/03gndo</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/09vmmw</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/s09vws</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sd8fv5</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">John Doe - Software Engineer</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Jane Smith - Product Manager</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Alex Johnson - Data Scientist</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Sarah Wilson - UX Designer</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Mike Brown - DevOps Engineer</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Lisa Chen - Full Stack Developer</div>
                 </div>
             </Command>
         ),
     },
     {
-        Icon: WaypointsIcon,
-        name: "Connect your apps",
-        description: "Integrate with your favorite apps and services.",
+        Icon: VideoIcon,
+        name: "Live Video Interviews",
+        description: "Conduct real-time video interviews with LiveKit integration.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
-            <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+            <div className="absolute right-2 top-4 h-[300px] w-[600px] border border-border rounded-lg bg-black/20 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 flex items-center justify-center">
+                <div className="text-center">
+                    <VideoIcon className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
+                    <p className="text-muted-foreground">Video Interview in Progress</p>
+                    <div className="flex items-center justify-center gap-2 mt-2">
+                        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                        <span className="text-sm text-red-500">Live</span>
+                    </div>
+                </div>
+            </div>
         ),
     },
     {
         Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Keep track of your links with our calendar view.",
+        name: "Schedule Interviews",
+        description: "Manage interview schedules and candidate availability.",
         className: "col-span-3 lg:col-span-1",
         href: "#",
         cta: "Learn more",
